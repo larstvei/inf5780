@@ -1,17 +1,27 @@
-\documentclass[a4paper,11pt]{scrartcl}
-\setkomafont{disposition}{\normalfont\bfseries}
+\documentclass[a4paper,11pt,oneside]{book} %scrartcl
+%\setkomafont{disposition}{\normalfont\bfseries}
 \usepackage[utf8]{inputenc}
 \usepackage[backend=biber,bibencoding=utf8,sorting=none]{biblatex}
 \usepackage{graphicx}
 \usepackage{booktabs,array,dcolumn}
+\usepackage{ifikompendiumforside}
 
  
 \title{How sossialnetworks influence open source software development}
 \subtitle{Subtitle}
+\author{John Rongved, Lars Tveito, Kristian A. Hiorth}
 \date{\today}
+\pagestyle{plain}
 
 \begin{document}
-\maketitle
+%\maketitle
+\ififorside
+
+\frontmatter
+
+  \tableofcontents
+
+  \mainmatter
 
 \section{Introduction}
 
@@ -36,5 +46,14 @@ Reddit also functions as sort of a funnel for traffic, where the ‘good’ cont
 
 \newpage{}
 
+\section{Social media facts}
+
+\section{Discussion}
+
+\section{Concluding remarks}
+
+\backmatter
+
+\printbibliography
  
 \end{document}
