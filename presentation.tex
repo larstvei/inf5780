@@ -6,7 +6,7 @@
 \usepackage{times}
 
 \usetheme{Frankfurt}
-\usecolortheme{crane}
+\usecolortheme{orchid}
 
 \usepackage{color}
 
@@ -27,6 +27,8 @@
   \end{frame}
 }
 
+\newcommand{\coloreddot}[1][black]{\Large\textcolor{#1}{\ensuremath\bullet}}
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
 
 \begin{document}
 
@@ -57,6 +59,14 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}
+  \frametitle{GitHub vs Sourceforge}
+  \begin{figure}
+    \includegraphics[width=\textwidth]{sourceforge-github.pdf} \\
+    \caption{\coloreddot[red] Github \hspace{2em} \coloreddot[blue] Sourceforge}
+    \end{figure}
+\end{frame}
+
 
 \section{Related work}
 
@@ -68,17 +78,14 @@
   \begin{columns}[T]
     \begin{column}{.5\textwidth}
       \begin{itemize}
-      \item Includes a realtime visualization component written in Python.
 
-      \item This visualizer has a really useful IPython shell integration
-        feature.
-
+      \item
+        
         \uncover<2->{
 
-        \item However, this component hasn't been maintained that much lately.
+        \item
 
-        \item IPython, on the other hand, has undergone some serious refactoring the
-          last few years.
+        \item
         }
 
       \end{itemize}
