@@ -2,14 +2,13 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{textcomp}
+\usepackage{textcomp,hyperref,multicol}
 \usepackage{times}
 
 \usetheme{Frankfurt}
 \usecolortheme{orchid}
 
 \usepackage{color}
-
 \title{How social media affect FOSS}
 \subtitle{INF5780 Project 2}
 \author{{John Rongved} \and {Lars Tveito} \and {Kristian A. Hiorth}}
@@ -20,12 +19,11 @@
 % fits the presentation to the window when first displayed
 \hypersetup{pdfstartview={Fit}}
 
-\AtBeginSubsection[]
-{
-  \begin{frame}<beamer>{Outline}
-    \tableofcontents[currentsection,currentsubsection]
-  \end{frame}
-}
+%% \AtBeginSection[]{%
+%%   \begin{frame}<beamer>{Outline}
+%%     \tableofcontents[currentsection,currentsubsection]
+%%   \end{frame}
+%% }
 
 \newcommand{\coloreddot}[1][black]{\Large\textcolor{#1}{\ensuremath\bullet}}
 \setbeamertemplate{caption}{\raggedright\insertcaption\par}
@@ -43,63 +41,96 @@
 
 \section{Motivation}
 
-\subsection{Research Topic}
+%\subsection{Inspiration}
+
+\begin{frame}{Inspiration}
+  %\begin{center}
+  \begin{figure}
+    \includegraphics[width=.6\textwidth]{coffee.jpg}
+    %\caption{We had coffee}
+  \end{figure}
+  %% \begin{itemize}
+  %%   \item
+  %% \end{itemize}
+\end{frame}
 
 \begin{frame}
-  \frametitle{Research Topic}
+  \begin{multicols}{2}
+
+    \begin{center}
+      \includegraphics[width=.35\textwidth]{Reddit_logo.pdf}
+
+      \vskip5em
+
+      \includegraphics[width=.35\textwidth]{hacker-news_logo.jpg}
+    \end{center}
+
+    \begin{center}
+      \includegraphics[width=.35\textwidth]{so-logo.eps}
+
+      \vskip5em
+
+      \includegraphics[width=.35\textwidth]{GitHub_Logo.eps}
+    \end{center}
+  \end{multicols}
+  \vskip2em
+  \begin{center}
+    All of us used these sites
+  \end{center}
+\end{frame}
+
+%\subsection{Research Topic}
+
+\begin{frame}{Research Topic}
   \begin{itemize}
-  \item Free and Open Source Software (FOSS) projects are a kind of Community
-    Based Peer Production (CBPP)
-  \item They revolve around a community
-  \item Social Media has changed how Internet
-    communities work
-
-    \pause
-
-  \item We wanted to investigate how Social Media have been, and are,
-    influencing FOSS projects in particular
+    %% \item Free and Open Source Software (FOSS) projects are a kind of Community
+    %%   Based Peer Production (CBPP)
+    %% \item They revolve around a community
+    %% \item Social Media has changed how Internet
+    %%   communities work
+  \item FOSS/CBPP is community based
+  \item Social media affect internet communities
+  \item How does social media affect FOSS?
+    %% \item We wanted to investigate how Social Media have been, and are,
+    %%   influencing FOSS projects in particular
   \end{itemize}
 \end{frame}
 
-\subsection{Key Aspects of FOSS Projects}
+%\subsection{Key Aspects of FOSS Projects}
 
-\begin{frame}{Key Aspects}{Exposure}
-  FOSS projects need exposure to attract both users and contributors.
-\end{frame}
-
-\begin{frame}{Key Aspects}{Support}
+\begin{frame}{Key Aspects}
+  Exposure
   \begin{itemize}
-  \item Like all software, FOSS has to be supported.
-  \item 
-
+  \item Needed to attract both users and contributors
+  \end{itemize}
+  \pause
+  Knowledge base
+  \begin{itemize}
+  \item A mechanism for distributing knowledge resources.
+    %% \item Like all software, FOSS has to be supported.
+  \end{itemize}
+  \pause
+  Development tools
+  \begin{itemize}
+  \item Complex structures demands simplifying tools
+    %% \item Developers need good tools
+  \item Collaboration tools are essential for scalable projects
+    %% \item Internal communication and coordination of tasks is
+    %% \item FOSS developers are usually distributed spatially,
+    %%   compounding the need for efficient tools
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Key Aspects}{Development Tools}
+%\subsection{Relevant Social Media Sites}
 
-  \begin{itemize}
-    \item Software developers work more efficiently when supported by
-      good tools
-    \item Collaboration tools are essential for any serious software project
-    \item FOSS developers are usually distributed spatially,
-        compounding the need for efficient tools
-
-  \end{itemize}
-\end{frame}
-
-\subsection{Relevant Social Media Sites}
-
-\begin{frame}
-  \frametitle{Social News}
-
+\begin{frame}{Social News}
   \begin{center}
     \includegraphics[width=.6\textwidth]{Reddit_logo.pdf}
 
-  \vskip0pt plus.5fill
+    \vskip0pt plus.5fill
 
     \includegraphics[width=.6\textwidth]{hacker-news_logo.jpg}
   \end{center}
-
 \end{frame}
 
 
@@ -117,43 +148,46 @@
 
 \section{Related work}
 
-\subsection{Social coding}
+%\subsection{Social coding}
 
-\begin{frame}
-  \frametitle{GitHub vs Sourceforge}
+\begin{frame}{GitHub vs Sourceforge}
   \begin{figure}
     \includegraphics[width=\textwidth]{sourceforge-github.pdf} \\
-    \caption{\coloreddot[red] Github \hspace{2em} \coloreddot[blue] Sourceforge}
-    \end{figure}
+    \caption{\coloreddot[red] Github \hspace{2em} \coloreddot[blue] Sourceforge\footnote{\href{http://www.google.com/trends/explore\#q=sourceforge\%2C\%20github\&cmpt=q}{Source: Google Trends}}}
+  \end{figure}
 \end{frame}
 
 
-\subsection{Social Q \&{} A}
+%\subsection{Social Q \&{} A}
 
-\subsection{Social news}
-
-
-
+%\subsection{Social news}
 
 \section{Discussion}
 
-\subsection{Interesting things}
-
 \begin{frame}
-Very interesting
+  Trends indicate there is a relationship between these sites
+  \begin{itemize}
+  \item Supported by literature\footnote{Vasilescu et al. 2014}
+  \item Supported by internet analytic tools\footnote{alexia.com and similarweb.com}
+  \end{itemize}
+  Similarities between the sites
+  \begin{itemize}
+  \item Extensive use of gamification
+  \item Encouraging participation, creation and promotion of high-quality content
+  \end{itemize}
 \end{frame}
 
-\section*{Summary}
+%\subsection{Interesting things}
 
-\begin{frame}
-Social Media brings new opportunities for FOSS projects, as well as
-new challenges.
+%% \begin{frame}
+%%   Social Media brings new opportunities for FOSS projects, as well as
+%%   new challenges.
 
-  
-  \pause
-  \vskip0pt plus.5fill
 
-  Questions?
-\end{frame}
+%%   \pause
+%%   \vskip0pt plus.5fill
+
+%%   Questions?
+%% \end{frame}
 
 \end{document}
