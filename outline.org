@@ -1,0 +1,92 @@
+* Motivation 
+** Hva handler prosjekter vårt om?
+   Hvordan sosiale nettsteder påvirker utvikling av FOSS.
+** Tre aspekter
+*** Oppmerksomhet
+    Når man går ut med nyheter, announcements, releases, kule ting man
+    har gjort til allmenheten (utad)
+*** Support
+    Brukerhjelp mellom brukere/utviklere av et prosjekt
+*** Utvikling
+    Samarbeid mellom bidragsytere, utviklere om å utvikle selve
+    programvaren, fikse bugs osv.  
+
+** Key social media sites
+   Som oppfyller rollene over...
+
+*** Reddit + HN
+
+    Crowdmoderated
+    nyhets/diskusjonsfora. Subreddits. Up/downvoting. Linking
+    istedenfor hosting.
+
+    
+
+*** SO
+    Q&A site. Gamification!
+
+*** GitHub
+
+    Verktøy for samarbeid til utvikling, koding.
+
+    Gratis (for public) hosting av gitrepo. Issue trackers, fin
+    webinterface osv. merge review ting.
+
+* Related work
+** Oppmerksomhet
+*** FØR:
+    nyhetssider à la Slashdot - redigert av journalister med
+    egeninteresser
+*** NÅ:
+    alle kan poste, tom. random folk som synes noe er kult
+    Crowd moderation istedenfor satte moderatorer.
+
+    
+*** KONTRA: karmawhoring, hivemind type ensretting
+** Support
+    Bruker (til bruker, i virkeligheten ofte bruker til
+    utvikler)-hjelp.
+
+*** FØR:
+     mailinglister, forum.
+
+     
+*** NÅ:
+    gamifisert interface på SO, forenklet dialog (eksplisitt
+    forskjell SPM/SVAR)
+
+    Rewards for å svare -> raskere svartid
+    
+    Bedre indeksert av søkemotorer
+    
+    Snakke om paperne -> overlapp SO/GH.
+
+    Oppførsel mailingliste/SO forskjellig (samme folk).
+
+    
+*** KONTRA:
+    folk som gamer systemet, blir for motivert av gamification
+    og unngår å være hjelpsomme
+** Utvikling
+*** FØR: 
+    mailinglister, centralized VCS, osv.
+*** NÅ:
+    dVCS (git), github har issue tracker, review tools etc.
+
+     Samler mange forskjellige prosjekter ett sted, enkel interaksjon
+     mellom dem.
+     Lett og lav terskel for å bidra med små endringer.
+
+     Enkelte elementer (inspirert) av gamification.
+*** KONTRA:
+    proprietær plattform, selv om den er basert på noe fritt.
+     Mangel på kontroll over kritisk infrastruktur i prosjektet.
+*** OUTREACH
+    Etterspurte data fra Github for å sjekke om spikes ga effekt ->
+    fikk ikke. Forslag til å lage vha. Github Archive + historiske
+    posts fra HN/reddit.
+
+    Post på /r/emacs om overgang til Github -> proprietær innvending
+
+* Discussion
+
