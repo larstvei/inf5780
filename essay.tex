@@ -156,15 +156,16 @@ their communities. %CITEHERE%
 Over the last several years, however, there has been a shift in the
 way communication happens on the Internet, with the advent of the
 Social Networks such as Facebook, Twitter and reddit. The latter, and
-other special interest social media sites like Hacker News, have seen
-particularly high adoption rates amongst software developers and power
-users, also for relatively technical discussions.
+other special interest social media sites like Hacker News, appear to
+have particularly high adoption rates amongst software developers and
+power users, also for relatively technical discussions.
 % Kan jeg si det?
 
 Additionally, several services which one would consider part of Social
 Media have been launched that are specifically aimed at software
 development, such as GitHub and StackOverflow, amongst many others.
 
+\subsection{Research}
 % CITE \/
 There has been quite a bit of research into FOSS projects and their
 organizational behaviour, but much of this work may be starting to
@@ -180,6 +181,7 @@ software development, and indeed FOSS projects has not seen very much
 published research. However, there have been a handful of interesting
 works during the last years.
 
+\subsubsection{Stack Overflow for Knowledge Management}
 In a recent case study of the R statistical programming language's
 community \cite{Vasilescu14StackOverflow}, Vasilescu et
 al. demonstrate how that project has seen a marked migration from
@@ -210,10 +212,24 @@ difficult. For these reasons, it is likely that sites such as
 StackOverflow will merely serve as a supplement to traditional mailing
 lists (or similar fora).
 
+Even though Stack Overflow is limited to a didactic questions and
+answers style, it has been shown, in aggregate, to form rather good
+documentation of for example Application Programming Interfaces (APIs)
+\cite{parnin2012crowd}.
 
-The increasing popularity and migration to distributed version control
-systems (dCVS) is also, in some cases, changing the way code actually
-makes it way into projects. Examples of dCVS are Git, Mercurial
+The data making up Stack Overflow also happens to be licensed under an
+open license, Creative Commons Attribution-ShareAlike 3.0 Unported
+(BY-SA 3.0). Stack Overflow currently packages and archives all of
+it's data quarterly, in collaboration with the Internet
+Archive\footnote{\url{https://archive.org/details/stackexchange}}. This
+ensures that communities are actually able extract and keep using this
+amassed knowledge even outside of the Stack Overflow platform.
+
+
+\subsubsection{Git and GitHub: Collaboration and Social Coding}
+The increasing popularity and migration to distributed Version Control
+Systems (dVCS) is also, in some cases, changing the way code actually
+makes it way into projects. Examples of dVCS are Git, Mercurial
 (coloquially known as Hg) and Bazaar. These have in common that they
 are less reliant on a single point of coordination during active
 development, which can make it much easier for small time contributors
@@ -222,7 +238,7 @@ control, or even set up third party repositories synchronized with the
 upstream.
 
 Github not only offers gratis\footnote{Github's services are free of
-  charge for publically available repositories} hosting of Git dCVS
+  charge for publically available repositories} hosting of Git dVCS
 repositories, but also provides a number of other code collaboration
 tools, like a graphical web interface to Git, issue tracking and code
 review tools. This has the potential to ease the burden of starting
@@ -240,6 +256,7 @@ reliant on proprietary software (and indeed, a whole proprietary third
 party hosted platform).
 
 
+\subsubsection{Getting Attention}
 FOSS projects, like all CBPP projects, are nothing without people
 forming a community around it. It is from a community, generally
 mostly users, that the project can recruit active contributors that
@@ -272,6 +289,8 @@ community.
 
 \section{Discussion}
 
+\subsection{Traffic spikes on GitHub}
+
 Knowing that social media is having an effect on FOSS projects in some
 ways, we would have liked to be able to investigate whether this
 effect stretched into the realm of development. In particular, it's
@@ -287,7 +306,17 @@ inquire about the possibility of receiving some general traffic
 statistics, so we would be able to detect and document the occurence
 of the aforementioned social media spikes. Unfortunately, this turned
 out not to be possible because of privacy issues.
-%Utbroder mer, foreslå ny approach, forklar ikke tid
+
+It may still be possible to infer some data about this from publically
+available data sources, such as Github
+Archive\footnote{\url{http://www.githubarchive.org}}, which chronicles
+all the publically visible events taking place on GitHub. If one
+correlates these with archives of posts on reddit and Hacker News
+(which are also available), one could compare activity in the time
+before and after a high-ranked mention on these sites. We did not have
+time within the scope of this project to pursue this any further
+however, since this approach would likely have neccesitated a lot of
+work to build credible and informative data.
 
 \subsection{The Emacs community}
 
