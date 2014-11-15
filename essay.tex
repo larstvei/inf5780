@@ -28,22 +28,35 @@ developers are moving away from mailing lists as the preferred means of communic
 Replacing the mailing lists are a number of social media sites, we will focus on the the following;
 Reddit\footnote{\texttt{http://www.reddit.com}}, HackerNews\footnote{\texttt{https://news.ycombinator.com}},
 StackOverflow\footnote{\texttt{http://www.stackoverflow.com}} and GitHub\footnote{\texttt{http://www.github.com}}.
-\\\\Social media has changed the landscape of the internet in several ways, and developers are taking advantage of this. In this report our focus will be on the role social
+\\\\Social media has changed the landscape of the internet in several ways, and developers are taking advantage of new opportunities. In this report our focus will be on the role social
 media sites play in software development. Initially, we will describe some of the most common
 websites used for open-source development, also briefly present relevant 
 litterature on the subject and finally discuss our findings.
+
+\subsection{Research question}
+
+Open source software development is based around a community of contributors, and although
+management may be very different from commercial ones, communication within the community is paramount.
+Social media has changed the landscape of the internet in the previous decade\cite{Kaplan201059}, this includes web based communities. Based on the assumption that social media changed internet communities, and open source
+software is heavily based around communities, we have formulated a research question:
+\begin{quote}
+\textit{How does social media influence communities involved in open source software development?}
+\end{quote}
+
+In order to answer this, we will consult relevant litterature on the subject, as well attempt to reach out
+to some of the targeted communities. 
 
 \subsection{Important terms}
 Before we continue, it is important to define some of the key terms we will be using
 in this essay. 
 %Overkill med subsubsection kanskje?
 \subsubsection*{Social media}
-Andreas Kaplan and Michael Haenlein define social media as "a group of Internet-based applications that build on the ideological and technological foundations of Web 2.0, and that allow the creation and exchange of user-generated content."\cite{Kaplan201059} The key aspect is user generated content being made much more available by infrastructural and technological progress in the recent decade. Some prominent examples of social media applications are FaceBook, Twitter and Tumblr.
-\subsubsection*{Open source development}
+Andreas Kaplan and Michael Haenlein define social media as "a group of Internet-based applications that build on the ideological and technological foundations of Web 2.0, and that allow the creation and exchange of user-generated content."\cite{Kaplan201059} A key aspect is user generated content being made much more available by infrastructural and technological progress in the recent decade. Some prominent examples of social media applications are FaceBook, Twitter and Tumblr.
+\subsubsection*{Open source software}
 %Insert well defined description of FOSS(fra pensum?)
 \cite{leister2014opensource}.
 
-\subsection{Research topic}
+\subsection{Key aspects of open source development}
 
 The focus in this essay will be on how social media influences open software development. To assess
 this we have chosen some focus points that we feel are representative in FOSS. 
@@ -67,18 +80,7 @@ this we have chosen some focus points that we feel are representative in FOSS.
 
 \end{description}
 
-\subsection{Research question}
 
-Open source software development is based around a participating community of contributors, and although
-management may be very different from commercial ones, communication within the community is paramount.
-Social media has changed the landscape of the internet in the previous decade\cite{Kaplan201059}, this includes web based communities. Based on the assumption that social media changed internet communities, and open source
-software is heavily based around communities, we have formulated a research question:
-\begin{quote}
-\textit{How does social media influence communities involved in open source software development?}
-\end{quote}
-
-In order to answer this, we will consult relevant litterature on the subject, as well attempt to reach out
-to some of the targeted communities. 
 
 
 \section{Central social media sites}
@@ -86,33 +88,24 @@ to some of the targeted communities.
 \subsection{Reddit}
 
 Reddit is a social networking and news site that allow users to submit content
-such as links or text content. The site does not itself host multimedia content,
-but users provide links with interesting content from sites like YouTube\footnote{\texttt{http://www.youtube.com}}, Imgur\footnote{\texttt{http://www.imgur.com}} and
-SoundCloud\footnote{\texttt{http://www.soundcloud.com}}.
-Reddit is organized by a collection of categories or 'subreddits'. 
-The subreddit for programming(\texttt{r/programming}) consists of about \num{500000}
-subscribers. %% The way Reddit works is by a voting system that works in a way that
+such as text or links to multimedia content. Reddit is organized into categories, or 'subreddits', 
+the subreddit for programming(\texttt{r/programming}) consists of about \num{500000}
+subscribers.
+%The site does not itself host multimedia content,but users provide links with interesting content from sites like YouTube\footnote{\texttt{http://www.youtube.com}}, Imgur\footnote{\texttt{http://www.imgur.com}} and SoundCloud\footnote{\texttt{http://www.soundcloud.com}}.
+ %% The way Reddit works is by a voting system that works in a way that
 %% ‘good’ content becomes more visible, and ‘bad’ content is displaced.
-Reddit works by a voting system that prioritizes 'good' content, and 'bad'
-content is displaced. This way, if a website is prominently displayed it means that
-many people have voted on it as a interesting piece of content.
+Reddit employs a system in which registered users can cast votes on the
+quality of content. Ranking of content is decided by a score based on the amount of positive
+votes(upvotes) and negative votes(downvotes). Reddit has a high number of users, around 175 million
+unique users every month. Because of Reddit's large userbase it has 
+the potential to generate huge traffic spikes, in some cases even crashing
+smaller sites because of the overload of traffic. This phenomenon is playfully referred to as 
+the 'reddit hug of death’.
 
-Reddit has a high number of users, around 175 million
-unique users every month. Because of this huge number of users it has 
-the potential to generate huge traffic spikes, this is sometimes referred
-Reddit also functions as sort of a funnel for traffic, where the ‘good’
-content quickly rises to the top of the page, resulting in more
-traffic. This in turn spikes traffic on the site that hosts this content,
-sometimes resulting in what is know as the ‘Reddit hug of death’, where a
-small website hosting popular content crashes due to the spike in traffic
-generated by Reddit. %% As such, Reddit functions as a tastemaker in new and
-%% interesting content.
-
-
-We will not do any investigation into non-technical subreddits, nor discuss
-any of them. We do think technical subreddits have an effect on CBPP, but we
-have no reason to believe that less technical subreddits (like
-birdswitharms) have any impact on CBPP.
+%We will not do any investigation into non-technical subreddits, nor discuss
+%any of them. We do think technical subreddits have an effect on CBPP, but we
+%have no reason to believe that less technical subreddits (like
+%birdswitharms) have any impact on CBPP.
 
 \subsection{Hacker News}
 The news aggregator HackerNews is a social news website that caters to
@@ -120,23 +113,26 @@ programmers and entrepreneurs. In a similar in structure to Reddit, Hacker
 News uses ‘upvoting’ as a way to ensure quality content is displayed most
 prominently on the site. The absence of a 'downvote', along with more
 comprehensive guidelines\footnote{\texttt{https://news.ycombinator.com/newsguidelines.html}},
-makes the community perhaps more stable, compared to Reddit.
+makes the community less volatile in comparison the Reddit.
 
 
 \subsection{StackOverflow}
 
 The social Q\&A website for programmers, hobbyists, students or anyone
 seeking technical advice. StackOverflow has quickly become the number one
-place to seek information related to programming related problems. On the
+place to seek information about programming related problems. On the
 website users submit a question and ‘tags’ it with relevant categories.
-Similarly to Reddit posts are up- or down-voted by other users. If a
+Similarly to Reddit posts are voted up or down by users. If a
 submitted question is too similar to an already answered thread, it may be
-merged, or if the question is badly worded or too banal, it may be
-deleted. If a question avoids these pitfalls, it may be answered by
+merged with a the previous thread. If a submitted question is badly formatted,
+poorly worded or disruptive, it may be deleted by a moderator.
+However, if a submitter avoids these pitfalls, it may be answered by
 anyone. Quality responses that many users find useful will be upvoted to the
 top, and the user who submitted that answer will be awarded ‘rep points’ to
-indicate his/hers level of expertise. This reward system is frequently used
-in similar social websites, and is a form of ‘gamification’.
+indicate his/hers level of expertise. 
+
+%This reward system is frequently used in similar social websites, 
+%and is a form of ‘gamification’.
 %this aspect will be explored more detailed in the final submission.
 %% Dette må vi huske på!
 
@@ -159,6 +155,8 @@ announced that they had reached 10 million public repositories, which
 accumulates to a very large contribution to the open source community.
 
 \section{Related works and opinions}
+
+
 
 Traditionally, Free and Open Source Software (FOSS) projects have
 relied upon mailing lists as the primary means of communication in
@@ -345,6 +343,7 @@ values, such as recommending use of non-free software.
 
 \section{Concluding remarks}
 
+\newpage
 \printbibliography
 
 \end{document}
