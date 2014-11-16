@@ -5,6 +5,9 @@
 \usepackage{booktabs,array,dcolumn,graphicx,parskip,ifikompendiumforside,siunitx}
 \usepackage[perpage]{footmisc}
 \usepackage{hyperref}
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
 \bibliography{ref}
 
 \title{How Social Media influence \hbox{Free and Open Source} Software Projects}
@@ -116,7 +119,7 @@ To clarify, we define some important terms that will be employed in this essay.
 \subsection{Key aspects of open source development}
 
 In order to narrow down the focus in our research we have defined three key aspects
-we consider to be central in FOSS development. We will use these aspects as context
+we consider to be central in FOSS development. This will be useful as context
 when considering how various Social Media sites are useful in the FOSS development cycle.
 
 \begin{description}
