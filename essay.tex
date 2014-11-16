@@ -2,8 +2,9 @@
 %\setkomafont{disposition}{\normalfont\bfseries}
 \usepackage[utf8]{inputenc}
 \usepackage[backend=biber,bibencoding=utf8]{biblatex}
-\usepackage{booktabs,array,dcolumn,graphicx,parskip,ifikompendiumforside,siunitx,hyperref}
+\usepackage{booktabs,array,dcolumn,graphicx,parskip,ifikompendiumforside,siunitx}
 \usepackage[perpage,symbol*]{footmisc}
+\usepackage{hyperref}
 \bibliography{ref}
 
 
@@ -23,64 +24,87 @@
 \pagenumbering{arabic}
 \section{Introduction}
 
-Open-source software development is often a highly collaborative activity, and effective communication 
-between members and coordination of tasks is critical for a successful project. 
-Historically, mailing lists have been the preferred medium for coordinating development
-and user support activities\cite{Vasilescu14StackOverflow}. In recent years however, 
-developers are moving away from mailing lists as the preferred means of communication.
-Replacing the mailing lists are a number of social media sites, we will focus on the the following;
-Reddit\footnote{\texttt{http://www.reddit.com}}, Hacker News\footnote{\texttt{https://news.ycombinator.com}},
-Stack Overflow\footnote{\texttt{http://www.stackoverflow.com}} and GitHub\footnote{\texttt{http://www.github.com}}.
-\\\\Social media has changed the landscape of the internet in several ways, and developers are taking advantage of new opportunities. In this report our focus will be on the role social
-media sites play in software development. Initially, we will describe some of the most common
-websites used for open-source development, also briefly present relevant 
-litterature on the subject and finally discuss our findings.
+Open-source software development is often a highly collaborative activity,
+and effective communication between members and coordination of tasks is
+critical for a successful project.  Historically, mailing lists have been
+the preferred medium for coordinating development and user support
+activities\cite{Vasilescu14StackOverflow}. In recent years however,
+developers are moving away from mailing lists as the preferred means of
+communication.  Replacing the mailing lists are a number of social media
+sites, we will focus on the the following;
+Reddit\footnote{\texttt{http://www.reddit.com}},
+Hacker News\footnote{\texttt{https://news.ycombinator.com}},
+Stack Overflow\footnote{\texttt{http://www.stackoverflow.com}} and
+GitHub\footnote{\texttt{http://www.github.com}}.
+
+
+Social media has changed the landscape of the internet in several ways, and
+developers are taking advantage of new opportunities. In this report our
+focus will be on the role social media sites play in software
+development. Initially, we will describe some of the most common websites
+used for open-source development, also briefly present relevant litterature
+on the subject and finally discuss our findings.
 
 \subsection{Research question}
 
-Open source software development is based around a community of contributors, and although
-management may be very different from commercial ones, communication within the community is paramount.
-Social media has changed the landscape of the internet in the previous decade\cite{Kaplan201059}, this includes web based communities. Based on the assumption that social media changed internet communities, and open source
-software is heavily based around communities, we have formulated a research question:
+Open source software development is based around a community of
+contributors, and although management may be very different from commercial
+ones, communication within the community is paramount.  Social media has
+changed the landscape of the internet in the previous
+decade\cite{Kaplan201059}, this includes web based communities. Based on the
+assumption that social media changed internet communities, and open source
+software is heavily based around communities, we have formulated a research
+question:
 \begin{quote}
-\textit{How does social media influence communities involved in open source software development?}
+  \textit{How does social media influence communities involved in open source
+    software development?}
 \end{quote}
 
-In order to answer this, we will consult relevant litterature on the subject, as well attempt to reach out
-to some of the targeted communities. 
+In order to answer this, we will consult relevant litterature on the
+subject, as well attempt to reach out to some of the targeted communities.
 
 \subsection{Important terms}
-Before we continue, it is important to define some of the key terms we will be using
-in this essay. 
+Before we continue, it is important to define some of the key terms we will
+be using in this essay.
 %Overkill med subsubsection kanskje?
+
 \subsubsection*{Social media}
-Andreas Kaplan and Michael Haenlein define social media as "a group of Internet-based applications that build on the ideological and technological foundations of Web 2.0, and that allow the creation and exchange of user-generated content."\cite{Kaplan201059} A key aspect is user generated content being made much more available by infrastructural and technological progress in the recent decade. Some prominent examples of social media applications are FaceBook, Twitter and Tumblr.
+Andreas Kaplan and Michael Haenlein define social media as "a group of
+Internet-based applications that build on the ideological and technological
+foundations of Web 2.0, and that allow the creation and exchange of
+user-generated content."\cite{Kaplan201059} A key aspect is user generated
+content being made much more available by infrastructural and technological
+progress in the recent decade. Some prominent examples of social media
+applications are FaceBook, Twitter and Tumblr.
 \subsubsection*{Open source software}
 %Insert well defined description of FOSS(fra pensum?)
 \cite{leister2014opensource}.
 
 \subsection{Key aspects of open source development}
 
-The focus in this essay will be on how social media influences open software development. To assess
-this we have chosen some focus points that we feel are representative in FOSS. 
+The focus in this essay will be on how social media influences open software
+development. To assess this we have chosen some focus points that we feel
+are representative in FOSS.
 
 \begin{description}
-  \item[Exposure] \hfill \\
+\item[Exposure] \hfill
+  
   A typical FOSS project does not have access to traditional means of
   promotion or advertisement. This fact is problematic because the community
   aspect of FOSS development is critical. Therefore a project needs a way to
   attract users as well as contributors to the project.
-  \item[Knowledge base] \hfill \\ In any project, there is a need to
-	share and keep track of knowledge. Documentation is not usually
-	sufficient to cover this requirement by itself.
-	\item[Development tools] \hfill \\
-	Practically all software projects
-	require some form of collaboration tools, such as Version Control
-	Systems (VCS) and Issue (Defect) Trackers. FOSS projects have a
-	compounded need for good such tools, since the developers mostly
-	are geographically distributed and cannot collaborate face to
-	face. 
+\item[Knowledge base] \hfill
 
+  In any project, there is a need to share and keep track of
+  knowledge. Documentation is not usually sufficient to cover this
+  requirement by itself.
+\item[Development tools] \hfill
+  
+  Practically all software projects require some form of collaboration
+  tools, such as Version Control Systems (VCS) and Issue (Defect)
+  Trackers. FOSS projects have a compounded need for good such tools, since
+  the developers mostly are geographically distributed and cannot
+  collaborate face to face.
 \end{description}
 
 
@@ -90,20 +114,27 @@ this we have chosen some focus points that we feel are representative in FOSS.
 
 \subsection{Reddit}
 
-Reddit is a social networking and news site that allow users to submit content
-such as text or links to multimedia content. Reddit is organized into categories, or 'subreddits', 
-the subreddit for programming(\texttt{r/programming}) consists of about \num{500000}
+Reddit is a social networking and news site that allow users to submit
+content such as text or links to multimedia content. Reddit is organized
+into categories, or 'subreddits', the subreddit for
+programming(\texttt{r/programming}) consists of about \num{500000}
 subscribers.
-%The site does not itself host multimedia content,but users provide links with interesting content from sites like YouTube\footnote{\texttt{http://www.youtube.com}}, Imgur\footnote{\texttt{http://www.imgur.com}} and SoundCloud\footnote{\texttt{http://www.soundcloud.com}}.
- %% The way Reddit works is by a voting system that works in a way that
+%The site does not itself host multimedia content,but users provide links
+%with interesting content from sites like
+%YouTube\footnote{\texttt{http://www.youtube.com}},
+%Imgur\footnote{\texttt{http://www.imgur.com}} and
+%SoundCloud\footnote{\texttt{http://www.soundcloud.com}}.
+%% The way Reddit works is by a voting system that works in a way that
 %% ‘good’ content becomes more visible, and ‘bad’ content is displaced.
+
 Reddit employs a system in which registered users can cast votes on the
-quality of content. Ranking of content is decided by a score based on the amount of positive
-votes(upvotes) and negative votes(downvotes). Reddit has a high number of users, around 175 million
-unique users every month. Because of Reddit's large userbase it has 
-the potential to generate huge traffic spikes, in some cases even crashing
-smaller sites because of the overload of traffic. This phenomenon is playfully referred to as 
-the 'reddit hug of death’.
+quality of content. Ranking of content is decided by a score based on the
+amount of positive votes(upvotes) and negative votes(downvotes). Reddit has
+a high number of users, around 175 million unique users every month. Because
+of Reddit's large userbase it has the potential to generate huge traffic
+spikes, in some cases even crashing smaller sites because of the overload of
+traffic. This phenomenon is playfully referred to as the 'reddit hug of
+death’.
 
 %We will not do any investigation into non-technical subreddits, nor discuss
 %any of them. We do think technical subreddits have an effect on CBPP, but we
@@ -115,7 +146,8 @@ The news aggregator Hacker News is a social news website that caters to
 programmers and entrepreneurs. In a similar in structure to Reddit, Hacker
 News uses ‘upvoting’ as a way to ensure quality content is displayed most
 prominently on the site. The absence of a 'downvote', along with more
-comprehensive guidelines\footnote{\texttt{https://news.ycombinator.com/newsguidelines.html}},
+comprehensive
+guidelines\footnote{\texttt{https://news.ycombinator.com/newsguidelines.html}},
 makes the community less volatile in comparison the Reddit.
 
 
@@ -123,26 +155,25 @@ makes the community less volatile in comparison the Reddit.
 
 The social Q\&A website for programmers, hobbyists, students or anyone
 seeking technical advice. Stack Overflow has quickly become the number one
-place to seek information about programming related problems. On the
-website users submit a question and ‘tags’ it with relevant categories.
-Similarly to Reddit posts are voted up or down by users. If a
-submitted question is too similar to an already answered thread, it may be
-merged with a the previous thread. If a submitted question is badly formatted,
-poorly worded or disruptive, it may be deleted by a moderator.
-However, if a submitter avoids these pitfalls, it may be answered by
-anyone. Quality responses that many users find useful will be upvoted to the
-top, and the user who submitted that answer will be awarded ‘rep points’ to
-indicate his/hers level of expertise. 
+place to seek information about programming related problems. On the website
+users submit a question and ‘tags’ it with relevant categories.  Similarly
+to Reddit posts are voted up or down by users. If a submitted question is
+too similar to an already answered thread, it may be merged with a the
+previous thread. If a submitted question is badly formatted, poorly worded
+or disruptive, it may be deleted by a moderator.  However, if a submitter
+avoids these pitfalls, it may be answered by anyone. Quality responses that
+many users find useful will be upvoted to the top, and the user who
+submitted that answer will be awarded ‘rep points’ to indicate his/hers
+level of expertise.
 
-%This reward system is frequently used in similar social websites, 
+%This reward system is frequently used in similar social websites,
 %and is a form of ‘gamification’.
 %this aspect will be explored more detailed in the final submission.
 %% Dette må vi huske på!
 
 \subsection{GitHub}
 
-GitHub is a Git repository web-based 
-hosting service which offers its users
+GitHub is a Git repository web-based hosting service which offers its users
 repositories for revision control and source control management. The site
 has gained popularity by providing powerful tools, whilst staying easy to
 use. It revolves around Git which is an free and open source distributed
@@ -159,113 +190,108 @@ accumulates to a very large contribution to the open source community.
 
 \section{Related works and opinions}
 
-
-
 Traditionally, Free and Open Source Software (FOSS) projects have
 relied upon mailing lists as the primary means of communication in
 their communities. %CITEHERE%
 
-Over the last several years, however, there has been a shift in the
-way communication happens on the Internet, with the advent of the
-Social Networks such as Facebook, Twitter and reddit. The latter, and
-other special interest social media sites like Hacker News, appear to
-have particularly high adoption rates amongst software developers and
-power users, also for relatively technical discussions.
+Over the last several years, however, there has been a shift in the way
+communication happens on the Internet, with the advent of the Social
+Networks such as Facebook, Twitter and reddit. The latter, and other special
+interest social media sites like Hacker News, appear to have particularly
+high adoption rates amongst software developers and power users, also for
+relatively technical discussions.
 % Kan jeg si det?
 
-Additionally, several services which one would consider part of Social
-Media have been launched that are specifically aimed at software
-development, such as GitHub and Stack Overflow, amongst many others.
+Additionally, several services which one would consider part of Social Media
+have been launched that are specifically aimed at software development, such
+as GitHub and Stack Overflow, amongst many others.
 
 \subsection{Research}
 % CITE \/
 There has been quite a bit of research into FOSS projects and their
-organizational behaviour, but much of this work may be starting to
-show its age and has very much been centered around mailing lists
-(such as \cite{Oezbek10Cancer, singh2011network}) and centralized (source) version
-control systems. Whilst mailing lists undoubtedly remain a very
-important communication channel for most projects, they are being
-challenged by social media and community behaviour may be changing
-because of it.
+organizational behaviour, but much of this work may be starting to show its
+age and has very much been centered around mailing lists (such as
+\cite{Oezbek10Cancer, singh2011network}) and centralized (source) version
+control systems. Whilst mailing lists undoubtedly remain a very important
+communication channel for most projects, they are being challenged by social
+media and community behaviour may be changing because of it.
 
 While research into social media is quite hot, its intersection with
 software development, and indeed FOSS projects has not seen very much
-published research. However, there have been a handful of interesting
-works during the last years.
+published research. However, there have been a handful of interesting works
+during the last years.
 
 \subsubsection{Stack Overflow for Knowledge Management}
-In a recent case study of the R statistical programming language's
-community \cite{Vasilescu14StackOverflow}, Vasilescu et
-al. demonstrate how that project has seen a marked migration from
-traditional FOSS community support in the form of a mailing list, to
-community support through the Social Q\&{}A site
-Stack Overflow. Stack Overflow is built around the concept of
-gamification\cite{deterding2011game} which appears to actually have
-changed the behaviour of community members. Through correlating email
-addresses, the authors showed that a significant number of informating
-providers (community members who answer questions) participated in
-both the mailing list and on Stack Overflow, and that the same
-individuals would tend to answer much faster on the latter site. This
-can be explained by the fact that on Stack Overflow, good answerers are
-rewarded with points, prominently displayed to other community
-members. Thusly, they may feel more motivated to provide timely
-responses to questions posed there, since the reward is higher.
+
+In a recent case study of the R statistical programming language's community
+\cite{Vasilescu14StackOverflow}, Vasilescu et al. demonstrate how that
+project has seen a marked migration from traditional FOSS community support
+in the form of a mailing list, to community support through the Social
+Q\&{}A site Stack Overflow. Stack Overflow is built around the concept of
+gamification\cite{deterding2011game} which appears to actually have changed
+the behaviour of community members. Through correlating email addresses, the
+authors showed that a significant number of informating providers (community
+members who answer questions) participated in both the mailing list and on
+Stack Overflow, and that the same individuals would tend to answer much
+faster on the latter site. This can be explained by the fact that on
+Stack Overflow, good answerers are rewarded with points, prominently
+displayed to other community members. Thusly, they may feel more motivated
+to provide timely responses to questions posed there, since the reward is
+higher.
+
 
 
 Stack Overflow has a very defined communication form, questions and
-answers. Therefore it is very suited to typical support/knowledge
-sharing activities. It is harder to imagine such benefits of
-gamification applied to less didactic communication, such as technical
-deciision making, design issues, etc. These discussions will tend to
-be conducted among peers, whilst support usually is between knowledge
-seekers and providers, who are not equal. Furthermore, there may be no
-``right'' answer, so awarding points and such would be very
-difficult. For these reasons, it is likely that sites such as
-Stack Overflow will merely serve as a supplement to traditional mailing
-lists (or similar fora).
+answers. Therefore it is very suited to typical support/knowledge sharing
+activities. It is harder to imagine such benefits of gamification applied to
+less didactic communication, such as technical deciision making, design
+issues, etc. These discussions will tend to be conducted among peers, whilst
+support usually is between knowledge seekers and providers, who are not
+equal. Furthermore, there may be no ``right'' answer, so awarding points and
+such would be very difficult. For these reasons, it is likely that sites
+such as Stack Overflow will merely serve as a supplement to traditional
+mailing lists (or similar fora).
 
-Even though Stack Overflow is limited to a didactic questions and
-answers style, it has been shown, in aggregate, to form rather good
-documentation of for example Application Programming Interfaces (APIs)
+Even though Stack Overflow is limited to a didactic questions and answers
+style, it has been shown, in aggregate, to form rather good documentation of
+for example Application Programming Interfaces (APIs)
 \cite{parnin2012crowd}.
 
-The data making up Stack Overflow also happens to be licensed under an
-open license, Creative Commons Attribution-ShareAlike 3.0 Unported
-(BY-SA 3.0). Stack Overflow currently packages and archives all of
-it's data quarterly, in collaboration with the Internet
+The data making up Stack Overflow also happens to be licensed under an open
+license, Creative Commons Attribution-ShareAlike 3.0 Unported (BY-SA
+3.0). Stack Overflow currently packages and archives all of it's data
+quarterly, in collaboration with the Internet
 Archive\footnote{\url{https://archive.org/details/stackexchange}}. This
 ensures that communities are actually able extract and keep using this
 amassed knowledge even outside of the Stack Overflow platform.
 
 
 \subsubsection{Git and GitHub: Collaboration and Social Coding}
+
 The increasing popularity and migration to distributed Version Control
-Systems (dVCS) is also, in some cases, changing the way code actually
-makes it way into projects. Examples of dVCS are Git, Mercurial
-(coloquially known as Hg) and Bazaar. These have in common that they
-are less reliant on a single point of coordination during active
-development, which can make it much easier for small time contributors
-to work on code changes, since they can work locally under source
-control, or even set up third party repositories synchronized with the
-upstream.
+Systems (dVCS) is also, in some cases, changing the way code actually makes
+it way into projects. Examples of dVCS are Git, Mercurial (coloquially known
+as Hg) and Bazaar. These have in common that they are less reliant on a
+single point of coordination during active development, which can make it
+much easier for small time contributors to work on code changes, since they
+can work locally under source control, or even set up third party
+repositories synchronized with the upstream.
 
-GitHub not only offers gratis\footnote{GitHub's services are free of
-  charge for publically available repositories} hosting of Git dVCS
-repositories, but also provides a number of other code collaboration
-tools, like a graphical web interface to Git, issue tracking and code
-review tools. This has the potential to ease the burden of starting
-new projects, as well as contributing to existing ones that use
-GitHub's platform - project instigators need not spend time on setting
-up complicated infrastructure, and newcomers get access to good tools
-off the bat.
+GitHub not only offers gratis\footnote{GitHub's services are free of charge
+  for publically available repositories} hosting of Git dVCS repositories,
+but also provides a number of other code collaboration tools, like a
+graphical web interface to Git, issue tracking and code review tools. This
+has the potential to ease the burden of starting new projects, as well as
+contributing to existing ones that use GitHub's platform - project
+instigators need not spend time on setting up complicated infrastructure,
+and newcomers get access to good tools off the bat.
 
-It should be noted that while GitHub revolves around Git, which itself
-is Free Software\footnote{Git is licensed under the GNU General Public
-  License version 2.0}, the GitHub platform, including all the tools
-and data generated by them, is actually proprietary. This poses a
-dilemma for FOSS projects, since they may often not wish to become
-reliant on proprietary software (and indeed, a whole proprietary third
-party hosted platform).
+It should be noted that while GitHub revolves around Git, which itself is
+Free Software\footnote{Git is licensed under the GNU General Public License
+  version 2.0}, the GitHub platform, including all the tools and data
+generated by them, is actually proprietary. This poses a dilemma for FOSS
+projects, since they may often not wish to become reliant on proprietary
+software (and indeed, a whole proprietary third party hosted platform).
 
 
 \subsubsection{Getting Attention}
@@ -293,42 +319,40 @@ especially, that do not have any brand name recognition to allure tech
 journalists.
 
 One especially interesting point is that, according to Singh et
-al. \cite{singh2011network}, inter-project relationships between
-developers may be quite beneficial to their success. If social media
-and coding platforms can help foster such relationships, which they
-would seem suited to do, this would be a big plus for the FOSS
-community.
+al. \cite{singh2011network}, inter-project relationships between developers
+may be quite beneficial to their success. If social media and coding
+platforms can help foster such relationships, which they would seem suited
+to do, this would be a big plus for the FOSS community.
 
 \section{Discussion}
 
 \subsection{Traffic spikes on GitHub}
 
-Knowing that social media is having an effect on FOSS projects in some
-ways, we would have liked to be able to investigate whether this
-effect stretched into the realm of development. In particular, it's
-known in the community that receiving attention on certain of the most
-popular software development social medias like (parts of) reddit and
-Hacker News tends to lead to heavy traffic spikes for the exposed
-project. Beyond this, there is little knowledge about longer term
-effects. Do projects really gain more users, and do these spikes lead
-to recruitment of new contributors?
+Knowing that social media is having an effect on FOSS projects in some ways,
+we would have liked to be able to investigate whether this effect stretched
+into the realm of development. In particular, it's known in the community
+that receiving attention on certain of the most popular software development
+social medias like (parts of) reddit and Hacker News tends to lead to heavy
+traffic spikes for the exposed project. Beyond this, there is little
+knowledge about longer term effects. Do projects really gain more users, and
+do these spikes lead to recruitment of new contributors?
 
 In order to attempt to answer these questions, we contacted GitHub to
-inquire about the possibility of receiving some general traffic
-statistics, so we would be able to detect and document the occurence
-of the aforementioned social media spikes. Unfortunately, this turned
-out not to be possible because of privacy issues.
+inquire about the possibility of receiving some general traffic statistics,
+so we would be able to detect and document the occurence of the
+aforementioned social media spikes. Unfortunately, this turned out not to be
+possible because of privacy issues.
 
 It may still be possible to infer some data about this from publically
 available data sources, such as GitHub
-Archive\footnote{\url{http://www.githubarchive.org}}, which chronicles
-all the publically visible events taking place on GitHub. If one
-correlates these with archives of posts on reddit and Hacker News
-(which are also available), one could compare activity in the time
-before and after a high-ranked mention on these sites. We did not have
-time within the scope of this project to pursue this any further
-however, since this approach would likely have neccesitated a lot of
-work to build credible and informative data.
+Archive\footnote{\url{http://www.githubarchive.org}}, which chronicles all
+the publically visible events taking place on GitHub. If one correlates
+these with archives of posts on reddit and Hacker News (which are also
+available), one could compare activity in the time before and after a
+high-ranked mention on these sites. We did not have time within the scope of
+this project to pursue this any further however, since this approach would
+likely have neccesitated a lot of work to build credible and informative
+data.
 
 \subsection{The Emacs community}
 
